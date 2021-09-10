@@ -5,3 +5,9 @@ body {
 .active a {
   color: white !important;
 }
+
+@media only screen and (max-width: 590px) {
+  .container .row {
+    margin-bottom: 15px;
+  }
+}
