@@ -11,3 +11,37 @@ body {
     margin-bottom: 15px;
   }
 }
+
+.rmty {
+  height: fit-content;
+  margin-top: 1rem;
+  color: blue;
+  border: solid 1px blue;
+  background: rgba(247, 242, 242, 0.562);
+}
+
+.prs {
+  color: blue;
+  border: solid 1px blue;
+  background: rgba(247, 242, 242, 0.562);
+}
+
+.prs:hover {
+  background: #2e8bc0;
+  color: white;
+  border: solid 1px white;
+}
+
+.rmty:hover {
+  background: #2e8bc0;
+  color: white;
+  border: solid 1px white;
+}
+
+.rmty,
+.prs,
+.CV {
+  transition-property: background, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
