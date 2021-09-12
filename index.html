@@ -117,7 +117,13 @@
               <li><b>Age:</b> 24</li>
               <li><b>Gender:</b> Male</li>
             </ul>
-            <button class="CV btn btn-theme-outline">Download CV</button>
+            <button
+              onclick="document.getElementById('link').click()"
+              class="CV btn btn-theme-outline"
+            >
+              Download CV
+            </button>
+            <a id="link" href="/CV.docx" download hidden></a>
           </div>
         </div>
       </div>
@@ -472,6 +478,7 @@
               <div class="form-row">
                 <div class="col-12 mt-3">
                   <input
+                    id="name"
                     class="form-control"
                     type="text"
                     name="Name"
@@ -481,6 +488,7 @@
                 <div class="row">
                   <div class="col-12 col-md-6 col-lg-6 mt-3">
                     <input
+                      id="subject"
                       class="form-control"
                       type="text"
                       name="Subject"
@@ -489,6 +497,7 @@
                   </div>
                   <div class="col-12 col-md-6 col-lg-6 mt-3">
                     <input
+                      id="mail"
                       class="form-control"
                       type="text"
                       name="Email"
@@ -498,13 +507,14 @@
                 </div>
                 <div class="col-12 mt-3">
                   <textarea
+                    id="msg"
                     class="form-control"
                     name="Message"
                     rows="6"
                     placeholder="Enter message here."
                   ></textarea>
                 </div>
-                <button type="submit" class="btn prs mt-3 ml-1">
+                <button onclick="sendMail()" class="btn prs mt-3 ml-1">
                   Send Message
                 </button>
               </div>
@@ -550,8 +560,12 @@
               <p>Contact me</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li>w33cuba@gmail.com</li>
-                <li>+5356566601</li>
+                <li>
+                  <a href="https://wa.me/+5356566601"
+                    ><i class="fab fa-whatsapp" style="margin-right: 7px"></i
+                    >Whatsapp</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
